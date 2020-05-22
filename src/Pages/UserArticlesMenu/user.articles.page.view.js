@@ -1,8 +1,8 @@
 import React from 'react'
 import {ArticleCard} from '../../Components/ArticleCard'
-import {NormalButton} from '../../Components/NavbarButton'
+import {PacmanLoader} from "react-spinners";
 
-const UserArticlesPageView = ({articles,setArticles}) => {
+const UserArticlesPageView = ({fail,loading,articles,setArticles}) => {
 
     return (
         
@@ -11,13 +11,21 @@ const UserArticlesPageView = ({articles,setArticles}) => {
             <div class="w-1/2  p-16 z-10 mb-32 ">
             <p class="text-6xl font-thin leading-loose">Blog Posts</p>
             <div class="border-solid border-black border-2 mt-4 mb-16" />
-                <div class="">
+                {loading ?
+                <div class="justify-center">
+                <PacmanLoader 
+                size={50}
+                loading={loading} />
+                </div>
+                : 
+                    <div class="">
                 {articles.length ? articles.map(item => {
                     return <ArticleCard type='user' articles={articles} setArticles={setArticles} article={item} />
-                }) : null
+                }) : fail
                 }
                 </div>
-            </div>
+                } 
+                </div>
             <div class="w-1/4"></div>
         </div>
     )

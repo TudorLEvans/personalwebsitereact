@@ -1,7 +1,7 @@
 import React from 'react'
+import {PacmanLoader} from "react-spinners";
 
-const UserArticlePageView = ({article}) => {
-    console.log(article.body)
+const UserArticlePageView = ({loading,fail,article}) => {
     let articleText;
     const articleDate = new Date(Date.parse(article.timeCreated))
 
@@ -25,12 +25,33 @@ const UserArticlePageView = ({article}) => {
             </div>
             <div class="w-1/6"/>
             <div class="flex-column items-center p-16 z-10 mb-32 w-1/2">
-                <div class="w-fill">
+                <div class="w-fill min-h-32">
+                    {loading ? 
+                    <div class="h-32">
+                    <PacmanLoader 
+                        size={50}
+                        loading={loading} /> 
+                    </div>
+                        :
+                    <div>
                     <p class="text-6xl font-thin break-words">{article.title}</p>
                     <p class="text-lg italic break-words font-thin whitespace-prewrap">{article.subtitle}</p>
+                    </div>
+                    }
                 </div>
                 <div class="border-solid border-black border-2 mt-4 mb-16" />
-                <div class="w-fill wrap bg-white text-lg font-hairline mb-4">{articleText}</div>
+                {loading ?
+                    <PacmanLoader 
+                    size={50}
+                    loading={loading} /> 
+                    : 
+                    <div>
+                    { articleText ?
+                        <div class="w-fill wrap bg-white text-lg font-hairline mb-4">{articleText}</div>
+                        :
+                        fail }
+                    </div>
+                }
             </div>
         </div>
     )

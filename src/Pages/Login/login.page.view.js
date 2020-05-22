@@ -1,7 +1,8 @@
 import React from 'react'
 import {LoginInputBox,LoginSubmitButton} from '../../Components/FormInputBox'
+import {PacmanLoader} from "react-spinners";
 
-const LoginPageView = ({login,setLogin,handleFormSubmit}) => {
+const LoginPageView = ({loading,fail,login,setLogin,handleFormSubmit}) => {
 
     return (
         <div class="flex">
@@ -19,6 +20,12 @@ const LoginPageView = ({login,setLogin,handleFormSubmit}) => {
                     })}
                     <LoginSubmitButton title='login' />
                 </form>
+            </div>
+            <div class="pt-6">
+            {loading ? <PacmanLoader 
+                size={20}
+                loading={loading} />
+                : fail}
             </div>
         </div>
         </div>

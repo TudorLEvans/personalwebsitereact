@@ -1,6 +1,8 @@
 import React from 'react'
 import {Tudor} from '../../Images'
 import Scrollspy from 'react-scrollspy'
+import {GrLinkedin,GrGithub} from 'react-icons/gr'
+import { Link } from 'react-router-dom'
 
 const HomePageView = () => {
 
@@ -18,6 +20,14 @@ const HomePageView = () => {
             <div class="flex-column justify-center mb-32 pt-20">
                 <section id='section-1' class="justify-center section-1 w-full">
                     <p class="text-6xl text-center font-thin leading-loose">Tudor Lucien Evans</p>
+                    <div class="flex justify-center">
+                        <Link onClick={() => window.location.href = 'https://www.linkedin.com/in/tudor-evans-5a2232151/'}>
+                            <GrLinkedin class="p-2" size={60} />
+                        </Link>
+                        <Link onClick={() => window.location.href = 'https://github.com/TudorLEvans'}>
+                            <GrGithub class="p-2" size={60} />
+                        </Link>
+                    </div>
                     <div class="flex justify-center">
                         <img src={Tudor} alt=''/>
                     </div>
