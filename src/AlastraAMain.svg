@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 300 300"
+   height="300mm"
+   width="300mm">
+  <defs
+     id="defs2">
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient6690">
+      <stop
+         id="stop6688"
+         offset="0"
+         style="stop-color:#000000;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       osb:paint="gradient"
+       id="linearGradient6678">
+      <stop
+         id="stop6674"
+         offset="0"
+         style="stop-color:#ff767c;stop-opacity:1;" />
+      <stop
+         id="stop6676"
+         offset="1"
+         style="stop-color:#000000;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient6632">
+      <stop
+         id="stop6630"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient6626">
+      <stop
+         id="stop6624"
+         offset="0"
+         style="stop-color:#000000;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient6620">
+      <stop
+         id="stop6618"
+         offset="0"
+         style="stop-color:#ff7877;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       osb:paint="gradient"
+       id="linearGradient6612">
+      <stop
+         id="stop6608"
+         offset="0"
+         style="stop-color:#000000;stop-opacity:1;" />
+      <stop
+         id="stop6610"
+         offset="1"
+         style="stop-color:#ff7877;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient5052">
+      <stop
+         id="stop5050"
+         offset="0"
+         style="stop-color:#ff7877;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient4990">
+      <stop
+         id="stop4988"
+         offset="0"
+         style="stop-color:#ff7877;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient4962">
+      <stop
+         id="stop4960"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient4932">
+      <stop
+         id="stop4930"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       osb:paint="solid"
+       id="linearGradient4924">
+      <stop
+         id="stop4922"
+         offset="0"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       gradientTransform="matrix(0.76527284,-0.00269456,-0.00257567,0.79455609,-24.281301,1.5496207)"
+       gradientUnits="userSpaceOnUse"
+       y2="49.215767"
+       x2="100.87586"
+       y1="49.215767"
+       x1="-32.525936"
+       id="linearGradient6616"
+       xlink:href="#linearGradient5052" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="574.10437"
+       x2="618.33337"
+       y1="574.10437"
+       x1="158.04688"
+       id="linearGradient6622"
+       xlink:href="#linearGradient6620" />
+    <linearGradient
+       gradientTransform="matrix(0.76527284,-0.00269456,-0.00257567,0.79455609,-24.281301,1.5496207)"
+       gradientUnits="userSpaceOnUse"
+       y2="49.215767"
+       x2="100.87586"
+       y1="49.215767"
+       x1="-32.525936"
+       id="linearGradient6634"
+       xlink:href="#linearGradient6632" />
+    <linearGradient
+       gradientTransform="matrix(0.76503772,0,0,0.7947912,-24.012272,49.225579)"
+       y2="574.10437"
+       x2="618.33337"
+       y1="574.10437"
+       x1="158.04688"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient6646"
+       xlink:href="#linearGradient6620" />
+    <linearGradient
+       gradientTransform="matrix(0.76503772,0,0,0.7947912,-24.012272,49.225579)"
+       y2="574.10437"
+       x2="618.33337"
+       y1="574.10437"
+       x1="158.04688"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient6650"
+       xlink:href="#linearGradient6620" />
+    <linearGradient
+       gradientTransform="matrix(0.76503772,0,0,0.7947912,-24.012272,49.225579)"
+       y2="574.10437"
+       x2="618.33337"
+       y1="574.10437"
+       x1="158.04688"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient6654"
+       xlink:href="#linearGradient6620" />
+    <linearGradient
+       gradientTransform="matrix(0.76503772,0,0,0.7947912,-24.012272,49.225579)"
+       y2="574.10437"
+       x2="618.33337"
+       y1="574.10437"
+       x1="158.04688"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient6658"
+       xlink:href="#linearGradient6620" />
+    <linearGradient
+       y2="574.10437"
+       x2="618.72388"
+       y1="574.10437"
+       x1="157.65637"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient6682"
+       xlink:href="#linearGradient6632" />
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="610.69128"
+       x2="664.16663"
+       y1="610.69128"
+       x1="157.85156"
+       id="linearGradient6684"
+       xlink:href="#linearGradient5052" />
+    <linearGradient
+       y2="91.202469"
+       x2="236.8008"
+       y1="19.039694"
+       x1="295.06555"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient6824"
+       xlink:href="#linearGradient6620" />
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,3)"
+     id="layer1">
+    <rect
+       y="-2.7349966"
+       x="0.022927959"
+       height="299.42743"
+       width="300.11295"
+       id="rect6686"
+       style="fill:url(#linearGradient6824);fill-opacity:1.0;stroke:#ff7877;stroke-width:0.26499996;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <path
+       transform="matrix(1.0603139,-0.09108791,0.09251929,0.99785045,87.269962,36.809813)"
+       style="fill:url(#linearGradient6634);fill-opacity:1.0;stroke:url(#linearGradient6616);stroke-width:0.20625614;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 83.388092,92.806081 43.766685,73.359793 28.528636,114.7822 19.028813,71.680375 -22.857298,85.593238 4.9180239,51.292428 -32.075053,27.219076 12.060029,27.548492 7.8165279,-16.38335 35.076754,18.328235 66.778271,-12.380524 56.636134,30.574698 100.41078,36.213345 60.503517,55.066046 Z"
+       id="path4986" />
+    <flowRoot
+       transform="matrix(0.34584351,0,0,0.33289665,3.0117001,-34.200116)"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:733.33331299px;line-height:1.25;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient6684);fill-opacity:1;stroke:none;stroke-width:0.77977258"
+       id="flowRoot3713-3"
+       xml:space="preserve"><flowRegion
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:733.33331299px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';fill:url(#linearGradient6684);fill-opacity:1;stroke-width:0.77977258"
+         id="flowRegion3715-8"><rect
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:733.33331299px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';fill:url(#linearGradient6684);fill-opacity:1;stroke-width:0.77977258"
+           y="208.23398"
+           x="160"
+           height="1240"
+           width="840"
+           id="rect3717-3" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:733.33331299px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';fill:url(#linearGradient6684);fill-opacity:1;stroke-width:0.77977258"
+         id="flowPara3719-7">A</flowPara></flowRoot>    <flowRoot
+       transform="matrix(0.34584351,0,0,0.33289665,13.649879,-24.73242)"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:666.66668701px;line-height:1.25;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient6682);fill-opacity:1.0;stroke:url(#linearGradient6658);stroke-width:0.78100049;stroke-miterlimit:4;stroke-dasharray:none"
+       id="flowRoot3713"
+       xml:space="preserve"><flowRegion
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:666.66668701px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';fill:url(#linearGradient6682);fill-opacity:1.0;stroke:url(#linearGradient6650);stroke-width:0.78100049;stroke-miterlimit:4;stroke-dasharray:none"
+         id="flowRegion3715"><rect
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:666.66668701px;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';fill:url(#linearGradient6682);fill-opacity:1.0;stroke:url(#linearGradient6646);stroke-width:0.78100049;stroke-miterlimit:4;stroke-dasharray:none"
+           y="208.23398"
+           x="160"
+           height="1240"
+           width="840"
+           id="rect3717" /></flowRegion><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Tahoma;-inkscape-font-specification:'Tahoma Bold';fill:url(#linearGradient6682);fill-opacity:1.0;stroke:url(#linearGradient6654);stroke-width:0.78100049;stroke-miterlimit:4;stroke-dasharray:none"
+         id="flowPara3719">A</flowPara></flowRoot>  </g>
+</svg>

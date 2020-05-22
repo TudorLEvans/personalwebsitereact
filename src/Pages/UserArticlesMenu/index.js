@@ -1,0 +1,1 @@
+export * from './user.articles.page.component'
