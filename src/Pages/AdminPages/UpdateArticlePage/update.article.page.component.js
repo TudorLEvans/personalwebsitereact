@@ -9,6 +9,9 @@ const UpdateArticlePage = (props) => {
     const getArticle = async (id) => {
         const info = await request('database/getArticleById',[id])
         if (info.status === 200) {
+            const body = JSON.parse(info.output.body)
+            info.output.body = body.join('\n')
+            console.log(info.output.body)
             setArticle(info.output)
         }
     }
@@ -19,7 +22,8 @@ const UpdateArticlePage = (props) => {
 
     const handleFormSubmit = async () => {
         try {
-            const info = await request('database/updateArticle',[article.title,article.subtitle,article.body,article.articleId])
+            const body = JSON.stringify(article.body.split('\n'))
+            const info = await request('database/updateArticle',[article.title,article.subtitle,body,article.articleId])
             if (info.output === true) {
                 history.push('/admin/articles')
             }

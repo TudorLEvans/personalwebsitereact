@@ -15,6 +15,8 @@ const UserArticlePage = (props) => {
         const info = await request('database/getArticleById',[id])
         setLoading(false)
         if (info.status === 200) {
+            info.output.body = JSON.parse(info.output.body)
+            console.log(info.output.body)
             setArticle(info.output)
             setFail(null)
             setLoading(false)

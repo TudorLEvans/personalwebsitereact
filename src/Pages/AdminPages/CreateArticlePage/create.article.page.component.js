@@ -9,8 +9,9 @@ const CreateArticlePage = (props) => {
 
     const handleFormSubmit = async () => {
         try {
-            const info = await request('database/createArticle',[article.title,article.subtitle,article.body])
-            console.log(info)
+            console.log(article.body)
+            const body = JSON.stringify(article.body.split('\n'))
+            const info = await request('database/createArticle',[article.title,article.subtitle,body])
             if (info.output === true) {
                 history.push('/admin/articles')
             }

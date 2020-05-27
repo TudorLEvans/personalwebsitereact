@@ -6,7 +6,17 @@ const UserArticlePageView = ({loading,fail,article}) => {
     const articleDate = new Date(Date.parse(article.timeCreated))
 
     if (article.body) {
-        articleText = article.body.split('\n').map(item => {return <p class="break-words whitespace-prewrap">{item}</p>})
+        articleText = article.body.map(item => 
+        { 
+            if (item.includes('*subheader*')) {
+                return <p class="break-words text-2xl font-thin underline whitespace-prewrap pb-6 leading-relaxed pt-2">{item.replace('*subheader*','')}</p>
+            } else if (item.includes('*link*')) {
+                const result = item.replace('*link*','')
+                return <a href={result} class="break-words font-mono whitespace-prewrap pb-2 underline">{result}</a>
+            } else {
+                return <p class="break-words whitespace-prewrap pb-2">{item}</p>
+            }
+        })
         console.log(articleText)
     }
 
@@ -20,7 +30,7 @@ const UserArticlePageView = ({loading,fail,article}) => {
                 <p class="w-full break-words whitespace-prewrap">subtitle: {article.subtitle}</p>
                 </div>
                 <div class="w-48">
-                <p class="w-ful break-words whitespace-prewrap">date: {articleDate.toDateString()}</p>
+                <p class="w-full break-words whitespace-prewrap">date: {articleDate.toDateString()}</p>
                 </div>
             </div>
             <div class="w-1/6"/>
@@ -34,7 +44,7 @@ const UserArticlePageView = ({loading,fail,article}) => {
                     </div>
                         :
                     <div>
-                    <p class="text-6xl font-thin break-words">{article.title}</p>
+                    <p class="text-6xl font-thin font-serif break-words">{article.title}</p>
                     <p class="text-lg italic break-words font-thin whitespace-prewrap">{article.subtitle}</p>
                     </div>
                     }
@@ -47,7 +57,7 @@ const UserArticlePageView = ({loading,fail,article}) => {
                     : 
                     <div>
                     { articleText ?
-                        <div class="w-fill wrap bg-white text-lg font-hairline mb-4">{articleText}</div>
+                        <div class="w-fill wrap bg-white text-xl font-serif font-hairline mb-4">{articleText}</div>
                         :
                         fail }
                     </div>
