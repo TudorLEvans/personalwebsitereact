@@ -5,7 +5,7 @@ const NavbarButton = ({text,hyperlink}) => {
     return(
         <Link to={hyperlink}>
             <div class="transition-all duration-500 text-white hover:text-primary-colour border-solid border-2 border-white hover:bg-white rounded-full p-4 m-2">
-                <p class="text-xl lg:text-2xl text-center">{text}</p>
+                <p class="text-xl lg:text-2xl truncate text-center">{text}</p>
             </div>
         </Link>
     )
@@ -34,8 +34,8 @@ const NormalButton = ({text,hyperlink}) => {
 const CreateButton = ({text,hyperlink}) => {
     return(
         <Link to={hyperlink}>
-            <div class="text-black content-center bg-white hover:text-white border-solid border-2 border-black hover:bg-black w-24">
-                <p class=" text-6xl font-bold text-center">{text}</p>
+            <div class="text-black align-middle bg-white hover:text-white border-solid border-2 border-black rounded-lg hover:bg-black p-2 ">
+                <p class="text-4xl lg:text-6xl">{text}</p>
             </div>
         </Link>
     )

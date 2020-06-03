@@ -17,7 +17,7 @@ const TitleInputBox = ({input,setInput,item}) => {
     return(
         <div>
             <textarea 
-                class="w-full text-6xl font-thin" style={{resize:"none"}}
+                class="w-full text-4xl lg:text-6xl font-serif" style={{resize:"none"}}
                 type="text" 
                 value={input[item]} 
                 onChange={e => {setInput({...input,...{[item]:e.target.value}})}} />
@@ -30,7 +30,7 @@ const SubtitleInputBox = ({input,setInput,item}) => {
         <div>
         <textarea 
             type="text" 
-            class="w-full text-lg italic font-thin"           
+            class="w-full text-lg italic"           
             style={{resize:"none"}}
             value={input[item]}
             onChange={e => {setInput({...input,...{[item]:e.target.value}})}} />
@@ -43,7 +43,7 @@ const TextInputBox = ({input,setInput,item}) => {
         <div>
         <textarea 
             type="text" 
-            class="w-full text-lg font-hairline mb-4 h-screen"
+            class="w-full text-lg lg:text-xl font-serif mb-4 h-screen"
             value={input[item]}
             onChange={e => {setInput({...input,...{[item]:e.target.value}})}} />
         </div>

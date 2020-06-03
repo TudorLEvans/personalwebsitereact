@@ -4,8 +4,8 @@ import {TextInputBox,MainSubmitButton,TitleInputBox,SubtitleInputBox} from '../F
 const ArticleForm = ({handleFormSubmit,article,setArticle}) => {
     return (
         <div class="flex w-full">
-            <div class="w-1/6"/>
-            <div class="w-1/2 pt-16">
+            <div class="lg:w-1/6"/>
+            <div class="w-full lg:w-1/2 px-6 lg:px-0 pt-16 pb-4">
             <form 
                 onSubmit={e => {e.preventDefault();handleFormSubmit()}}>
                 <div class="flex-column" >
