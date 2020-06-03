@@ -6,10 +6,10 @@ const LoginPageView = ({loading,fail,login,setLogin,handleFormSubmit}) => {
 
     return (
         <div class="flex">
-            <div class="w-1/3"/>
-        <div class="flex-row h-screen p-16 ml-12">
+            <div class="lg:w-1/3"/>
+        <div class="flex-row p-6 lg:p-16 lg:ml-12">
             <p class="text-6xl font-thin leading-loose">Login</p>
-            <div class="w-1/4">
+            <div class="lg:w-1/4">
                 <form onSubmit={e => {e.preventDefault();handleFormSubmit()}}>
                     {Object.keys(login).map(key => {
                         return (

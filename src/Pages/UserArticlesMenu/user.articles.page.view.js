@@ -7,9 +7,9 @@ const UserArticlesPageView = ({fail,loading,articles,setArticles}) => {
     return (
         
         <div class="flex">
-            <div class="w-1/6"/>
-            <div class="w-1/2  p-16 z-10 mb-32 ">
-            <p class="text-6xl font-thin leading-loose">Blog Posts</p>
+            <div class="lg:w-1/6"/>
+            <div class="w-full lg:w-1/2 p-6 lg:p-16 z-10 lg:mb-32 ">
+            <p class="text-5xl lg:text-6xl font-thin leading-loose">Blog Posts</p>
             <div class="border-solid border-black border-2 mt-4 mb-16" />
                 {loading ?
                 <div class="justify-center">
@@ -26,7 +26,7 @@ const UserArticlesPageView = ({fail,loading,articles,setArticles}) => {
                 </div>
                 } 
                 </div>
-            <div class="w-1/4"></div>
+            <div class="lg:w-1/4"></div>
         </div>
     )
 }

@@ -9,7 +9,7 @@ const UserArticlePageView = ({loading,fail,article}) => {
         articleText = article.body.map(item => 
         { 
             if (item.includes('*subheader*')) {
-                return <p class="break-words text-2xl font-thin underline whitespace-prewrap pb-6 leading-relaxed pt-2">{item.replace('*subheader*','')}</p>
+                return <p class="break-words text-xl lg:text-2xl font-thin underline whitespace-prewrap pb-6 leading-relaxed pt-2">{item.replace('*subheader*','')}</p>
             } else if (item.includes('*link*')) {
                 const result = item.replace('*link*','')
                 return <a href={result} class="break-words font-mono whitespace-prewrap pb-2 underline">{result}</a>
@@ -22,7 +22,7 @@ const UserArticlePageView = ({loading,fail,article}) => {
 
     return (
         <div class="flex">
-            <div class="font-mono fixed w-1/10 pl-10 m-8 border-r-2 text-xs border-solid border-black text-right pr-4 mr-16 mt-64">
+            <div class="invisible lg:visible font-mono fixed w-1/10 pl-10 m-8 border-r-2 text-xs border-solid border-black text-right pr-4 mr-16 mt-64">
                 <div class="w-48">
                 <p class="w-full break-words whitespace-prewrap">title: {article.title}</p>
                 </div>
@@ -33,8 +33,8 @@ const UserArticlePageView = ({loading,fail,article}) => {
                 <p class="w-full break-words whitespace-prewrap">date: {articleDate.toDateString()}</p>
                 </div>
             </div>
-            <div class="w-1/6"/>
-            <div class="flex-column items-center p-16 z-10 mb-32 w-1/2">
+            <div class="lg:w-1/6"/>
+            <div class="flex-column items-center p-6 lg:p-16 z-10 mb-32 lg:w-1/2">
                 <div class="w-fill min-h-32">
                     {loading ? 
                     <div class="h-32">
@@ -44,7 +44,7 @@ const UserArticlePageView = ({loading,fail,article}) => {
                     </div>
                         :
                     <div>
-                    <p class="text-6xl font-thin font-serif break-words">{article.title}</p>
+                    <p class="text-4xl lg:text-6xl font-thin font-serif break-words">{article.title}</p>
                     <p class="text-lg italic break-words font-thin whitespace-prewrap">{article.subtitle}</p>
                     </div>
                     }
@@ -57,7 +57,7 @@ const UserArticlePageView = ({loading,fail,article}) => {
                     : 
                     <div>
                     { articleText ?
-                        <div class="w-fill wrap bg-white text-xl font-serif font-hairline mb-4">{articleText}</div>
+                        <div class="w-fill wrap bg-white text-lg lg:text-xl font-serif font-hairline mb-4">{articleText}</div>
                         :
                         fail }
                     </div>

@@ -5,7 +5,7 @@ import {AuthContext} from '../../Common'
 
 const HeaderView = (props) => {
     return(
-        <div class="w-full flex h-32 items-center px-4 py-3 justify-between pl-32 pr-12 bg-primary-colour shadow-xl">
+        <div class="w-full flex h-32 items-center px-4 py-3 justify-between pl-4 lg:pl-32 lg:pr-12 bg-primary-colour shadow-xl">
             <Link to='/home' >
                 <p class="text-white text-6xl">TLE</p>
             </Link>
