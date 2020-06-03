@@ -34,8 +34,8 @@ const UserArticlePageView = ({loading,fail,article}) => {
                 </div>
             </div>
             <div class="lg:w-1/6"/>
-            <div class="flex-column items-center p-6 lg:p-16 z-10 mb-12 lg:w-1/2">
-                <div class="lg:w-fill min-h-32">
+            <div class="flex-column items-center p-6 lg:p-16 mb-6 w-full lg:w-1/2">
+                <div class="w-full min-h-32">
                     {loading ? 
                     <div class="h-32">
                     <PacmanLoader 
@@ -57,7 +57,7 @@ const UserArticlePageView = ({loading,fail,article}) => {
                     : 
                     <div>
                     { articleText ?
-                        <div class="lg:w-fill wrap bg-white text-lg lg:text-xl font-serif font-hairline mb-2">{articleText}</div>
+                        <div class="w-full lg:wrap bg-white text-lg lg:text-xl font-serif font-hairline mb-2">{articleText}</div>
                         :
                         fail }
                     </div>
