@@ -26,7 +26,7 @@ const ArticleCard = ({article,articles,setArticles,type}) => {
          }}>
             <div class="flex w-full text-black justify-between border-solid border-t-2 border-b-2 border-grey bg-white py-2 px-4 mt-6 mb-6 hover:shadow-xl">
                 <div class="flex-row w-10/12">
-                    <p class="text-3xl truncate">{article.title}</p>
+                    <p class="text-xl truncate">{article.title}</p>
                     <p class="text-xs truncate">{article.subtitle}</p>
                     <p class="text-s font-semibold">{articleDate.toDateString()}</p>
                 </div>
