@@ -7,7 +7,7 @@ export function request( path, reqBody) {
         body: JSON.stringify({params:reqBody})
     };
     const address = 'localhost';
-    const port = 9000;
+    const port = 80;
     return fetch(`http://${address}:${port}/${path}`, requestOptions)
         .then(response => {
             return response.text().then(text => {

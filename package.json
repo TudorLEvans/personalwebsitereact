@@ -19,7 +19,7 @@
   },
   "scripts": {
     "build:style": "postcss src/Styles/index.css -o src/Styles/tailwind.css",
-    "start": "set PORT=80 && npm run build:style && react-scripts start",
+    "start": "npm run build:style && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
