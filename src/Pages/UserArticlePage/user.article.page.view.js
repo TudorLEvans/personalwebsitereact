@@ -44,12 +44,12 @@ const UserArticlePageView = ({loading,fail,article}) => {
                     </div>
                         :
                     <div>
-                    <p class="text-4xl lg:text-6xl font-thin font-serif break-words">{article.title}</p>
-                    <p class="text-lg italic break-words font-thin whitespace-prewrap">{article.subtitle}</p>
+                        <p class="text-4xl lg:text-6xl font-thin font-serif break-words">{article.title}</p>
+                        <p class="text:md lg:text-lg italic break-words whitespace-prewrap">{article.subtitle}</p>
                     </div>
                     }
                 </div>
-                <div class="border-solid border-black border-2 mt-4 mb-8" />
+                <div class="border-solid border-black border-2 mt-4 mb-8 lg:mb-8" />
                 {loading ?
                     <PacmanLoader 
                     size={50}
