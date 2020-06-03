@@ -5,9 +5,9 @@ const LoginInputBox = ({input,setInput,item,type}) => {
         <div>
             <input 
                 type={type}
-                class="text-black font-mono border-solid border-l-2 border-b-2 border-black py px h-8 m-2 p-2" 
+                class="text-black border-solid border-2 border-black rounded-full py-2 px-4 h-16 w-64 m-2 p-2" 
                 value={input[item]} 
-                
+                placeholder={item}
                 onChange={e => {setInput({...input,...{[item]:e.target.value}})}} />
         </div>
     )
@@ -71,7 +71,7 @@ const LoginSubmitButton = ({title}) => {
         <input 
             type="submit" 
             value={title}
-            class="hover:text-white font-mono text-black border-solid border-2 border-black bg-white hover:bg-black p-2 m-2" />
+            class="hover:text-white font-mono text-black border-solid border-2 border-black bg-white hover:bg-black p-2 lg:m-2" />
             </div>
 
     )
@@ -82,7 +82,7 @@ const MainSubmitButton = ({title}) => {
         <input 
             type="submit" 
             value={title}
-            class="hover:bg-black hover:text-white text-black border-solid bg-white border-2 border-black rounded-full py-2 px-4 h-12 m-2 p-2" />
+            class="hover:bg-black hover:text-white text-black border-solid bg-white border-2 border-black rounded-full py-2 px-4 h-16 text-xl lg:m-2 p-2" />
 
     )
 }
