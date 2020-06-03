@@ -57,7 +57,10 @@ const UserArticlePageView = ({loading,fail,article}) => {
                     : 
                     <div>
                     { articleText ?
-                        <div class="w-full lg:wrap bg-white text-lg lg:text-xl font-serif font-hairline mb-2">{articleText}</div>
+                        <>
+                            <div class="w-full lg:wrap bg-white text-lg lg:text-xl font-serif font-hairline mb-2">{articleText}</div>
+                            <p class="text-lg italic break-words font-thin whitespace-prewrap">{articleDate.toDateString()}</p>
+                        </>
                         :
                         fail }
                     </div>
