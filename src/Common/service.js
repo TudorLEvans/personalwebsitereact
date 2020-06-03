@@ -6,7 +6,7 @@ export function request( path, reqBody) {
         headers: { 'Content-Type': 'application/json', 'authorisation': `${auth}`  },
         body: JSON.stringify({params:reqBody})
     };
-    const address = 'localhost';
+    const address = 'tudorevans.uk';
     const port = 80;
     return fetch(`http://${address}:${port}/${path}`, requestOptions)
         .then(response => {

@@ -34,8 +34,8 @@ const UserArticlePageView = ({loading,fail,article}) => {
                 </div>
             </div>
             <div class="lg:w-1/6"/>
-            <div class="flex-column items-center p-6 lg:p-16 z-10 mb-32 lg:w-1/2">
-                <div class="w-fill min-h-32">
+            <div class="flex-column items-center p-6 lg:p-16 z-10 mb-12 lg:w-1/2">
+                <div class="lg:w-fill min-h-32">
                     {loading ? 
                     <div class="h-32">
                     <PacmanLoader 
@@ -49,7 +49,7 @@ const UserArticlePageView = ({loading,fail,article}) => {
                     </div>
                     }
                 </div>
-                <div class="border-solid border-black border-2 mt-4 mb-16" />
+                <div class="border-solid border-black border-2 mt-4 mb-8" />
                 {loading ?
                     <PacmanLoader 
                     size={50}
@@ -57,7 +57,7 @@ const UserArticlePageView = ({loading,fail,article}) => {
                     : 
                     <div>
                     { articleText ?
-                        <div class="w-fill wrap bg-white text-lg lg:text-xl font-serif font-hairline mb-4">{articleText}</div>
+                        <div class="lg:w-fill wrap bg-white text-lg lg:text-xl font-serif font-hairline mb-2">{articleText}</div>
                         :
                         fail }
                     </div>
