@@ -5,7 +5,7 @@ const NavbarButton = ({text,hyperlink}) => {
     return(
         <Link to={hyperlink}>
             <div class="transition-all duration-500 text-white hover:text-primary-colour border-solid border-2 border-white hover:bg-white rounded-full p-4 m-2">
-                <p class=" text-2xl text-center">{text}</p>
+                <p class="text-xl lg:text-2xl text-center">{text}</p>
             </div>
         </Link>
     )
@@ -15,7 +15,7 @@ const FunctionButton = ({text,handleClick}) => {
     return(
         <Link onClick={e => {e.preventDefault();handleClick()}}>
             <div class="transition-all duration-500 text-white hover:text-primary-colour border-solid border-2 border-white hover:bg-white rounded-full p-4 m-2">
-                <p class=" text-2xl text-center">{text}</p>
+                <p class="text-xl lg:text-2xl text-center">{text}</p>
             </div>
         </Link>
     )
