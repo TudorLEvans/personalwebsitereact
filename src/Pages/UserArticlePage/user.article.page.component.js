@@ -6,9 +6,6 @@ const UserArticlePage = (props) => {
     const [article,setArticle] = useState({});
     const [loading,setLoading] = useState(false)
     const [fail,setFail] = useState(null)
-    console.log(article)
-    console.log(fail)
-    console.log(loading)
 
     const getArticle = async (id) => {
         const timer = setTimeout(() => setLoading(true), 300);
@@ -16,7 +13,6 @@ const UserArticlePage = (props) => {
         setLoading(false)
         if (info.status === 200) {
             info.output.body = JSON.parse(info.output.body)
-            console.log(info.output.body)
             setArticle(info.output)
             setFail(null)
             setLoading(false)
