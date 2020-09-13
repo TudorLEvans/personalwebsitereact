@@ -15,7 +15,7 @@ const UserArticlePageView = ({loading,fail,article}) => {
                 return <a href={result} class="break-words font-500 whitespace-prewrap pb-2 underline">{result}</a>
             } else if (item.includes('*quote*')) {
                 const result = item.replace('*quote*','')
-                return <a href={result} class="break-words whitespace-prewrap font-bold text-grey-800 py-8 px-4 italic">{result}</a>
+                return <p class="break-words text-xl tracking-wide whitespace-prewrap leading-loose font-semibold text-grey-800 py-12 px-4 italic">{result}</p>
             } else {
                 return <p class="break-words text-gray-700 font-semibold whitespace-prewrap pb-2">{item}</p>
             }
