@@ -12,10 +12,10 @@ const UserArticlePageView = ({loading,fail,article}) => {
                 return <p class="break-words text-xl lg:text-2xl font-bold whitespace-prewrap pb-6 leading-relaxed pt-2">{item.replace('*subheader*','')}</p>
             } else if (item.includes('*link*')) {
                 const result = item.replace('*link*','')
-                return <a href={result} class="break-words font-mono whitespace-prewrap pb-2 underline">{result}</a>
+                return <a href={result} class="break-words font-500 whitespace-prewrap pb-2 underline">{result}</a>
             } else if (item.includes('*quote*')) {
                 const result = item.replace('*quote*','')
-                return <a href={result} class="break-words whitespace-prewrap pb-4 pt-2 px-4 italic">{result}</a>
+                return <a href={result} class="break-words whitespace-prewrap font-bold text-grey-800 py-8 px-4 italic">{result}</a>
             } else {
                 return <p class="break-words text-gray-700 font-semibold whitespace-prewrap pb-2">{item}</p>
             }
@@ -23,10 +23,10 @@ const UserArticlePageView = ({loading,fail,article}) => {
     }
 
     return (
-        <div class="flex flex-row pt-32 min-h-screen">
+        <div class="flex flex-row md:pt-32 min-h-screen">
             <div class="md:w-1/3"/>
-            <div class="flex-column items-center mb-6 md:w-1/2 text-gray-800 px-6 md:px-0">
-                <div class="md:w-3/4 min-h-32 ">
+            <div class="flex-column items-center mb-6 md:w-1/2 w-full text-gray-800 px-6 md:px-0">
+                <div class="md:w-3/4 w-full min-h-32 ">
                     {loading ? 
                         <div class="h-32">
                             <PacmanLoader 
@@ -47,7 +47,7 @@ const UserArticlePageView = ({loading,fail,article}) => {
                     <div>
                     { articleText ?
                         <>
-                            <div class="md:w-3/4 lg:wrap bg-white text-lg lg:text-xl mb-2">{articleText}</div>
+                            <div class="md:w-3/4 w-full lg:wrap bg-white text-lg lg:text-xl mb-2">{articleText}</div>
                         </>
                         : fail 
                     }
