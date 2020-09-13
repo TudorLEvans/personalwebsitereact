@@ -47,7 +47,7 @@ const UserArticlePageView = ({loading,fail,article}) => {
                     <div>
                     { articleText ?
                         <>
-                            <div class="md:w-3/4 w-full lg:wrap bg-white text-lg lg:text-xl mb-2">{articleText}</div>
+                            <div class="md:w-3/4 w-full lg:wrap bg-white text-gray-700 text-lg lg:text-xl mb-2">{articleText}</div>
                         </>
                         : fail 
                     }
