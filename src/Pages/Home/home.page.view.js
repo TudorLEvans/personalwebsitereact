@@ -15,7 +15,7 @@ const HomePageView = () => {
                     <div class="flex flex-col md:flex-row w-full md:pl-64 pl-6 pr-6 md:pr-0 justify-between items-center ">
                         <div class="md:w-1/3 py-4 md:py-0">
                             <p class="text-5xl md:text-6xl font-bold leading-normal">Education</p>
-                            <p class=" text-xl font-thin mb-4 leading-loose">
+                            <p class=" text-xl font-semibold mb-4 leading-loose ">
                                 I read physics at Jesus College, Cambridge, achieving a triple first. After this, I took a bit of a side-step, and chose to read
                                 History and Philosophy of Science for my Masters, in order to explore my interest in philosophy. It's all gone, but it's not
                                 fogotten, and I continue to maintain an active interest in the subjects I studied at Cambridge.
@@ -49,7 +49,7 @@ const HomePageView = () => {
                         </div>
                         <div class="md:w-1/3 py-4 md:py-0">
                             <p class="text-5xl md:text-6xl font-bold leading-normal text-right">Career</p>
-                            <p class=" text-xl font-thin leading-loose text-right">
+                            <p class=" text-xl font-semibold mb-4 leading-loose  text-right">
                                 After graduating from Cambridge in June of 2019, I began my career at IBM UK, working in the South Bank office
                                 as a technology consultant. After entering as part of the ServiceNow practice, I moved into the public sector, 
                                 working under Hass Niazi (<a href="https://www.hassniazi.com">https://www.hassniazi.com</a>). Since joining
@@ -67,7 +67,7 @@ const HomePageView = () => {
                     <div class="flex md:flex-row flex-col justify-between items-center w-full md:pl-64 pl-6 pr-6 md:pr-0">
                     <div class="md:w-1/3 py-4 md:py-0">
                         <p class="text-5xl md:text-6xl font-bold leading-normal">Skills</p>
-                        <p class=" text-xl font-thin mb-4 leading-loose">
+                        <p class=" text-xl font-semibold mb-4 leading-loose ">
                         Naturally, having worked at IBM for a year, I have a strong base of technical skills,
                         with a good knowledge of JavaScript, Node, React, Python, Postgres, SQLite, and Terraform,
                         as well as general principles of technical architecture and various cloud providers. Beyond
@@ -106,7 +106,7 @@ const HomePageView = () => {
                         </div>
                         <div class="md:w-1/3 py-4 md:py-0">
                             <p class="text-5xl md:text-6xl font-bold leading-normal text-right">Interests</p>
-                            <p class=" text-xl font-thin mb-4 leading-loose text-right">
+                            <p class=" text-xl font-semibold mb-4 leading-loose text-right">
                             Outside of work my interests are very varied. I like to play guitar, both classical and electric, as
                             well as piano, and have a broader interest in music, regularly attending concerts in London (when we
                             aren't in lockdown). As well, I have a love of literature, with an especial interest in Tolstoy and
