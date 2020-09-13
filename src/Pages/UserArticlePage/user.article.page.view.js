@@ -9,15 +9,15 @@ const UserArticlePageView = ({loading,fail,article}) => {
         articleText = article.body.map(item => 
         { 
             if (item.includes('*subheader*')) {
-                return <p class="break-words text-xl lg:text-2xl font-bold whitespace-prewrap pb-6 leading-relaxed pt-2">{item.replace('*subheader*','')}</p>
+                return <p class="break-words text-xl lg:text-2xl font-bold whitespace-prewrap pb-8 leading-relaxed pt-2">{item.replace('*subheader*','')}</p>
             } else if (item.includes('*link*')) {
                 const result = item.replace('*link*','')
-                return <a href={result} class="break-words font-500 whitespace-prewrap pb-2 underline">{result}</a>
+                return <a href={result} class="break-words font-500 whitespace-prewrap pb-4 underline">{result}</a>
             } else if (item.includes('*quote*')) {
                 const result = item.replace('*quote*','')
                 return <p class="break-words text-xl tracking-wide whitespace-prewrap leading-loose font-semibold text-grey-800 py-12 px-4 italic">{result}</p>
             } else {
-                return <p class="break-words text-gray-600 font-semibold whitespace-prewrap pb-2">{item}</p>
+                return <p class="break-words text-gray-600 font-semibold whitespace-prewrap pb-4">{item}</p>
             }
         })
     }
