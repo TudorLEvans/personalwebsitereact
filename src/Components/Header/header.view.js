@@ -13,7 +13,7 @@ const HeaderView = (props) => {
             class="w-full flex-col h-auto shadow-xl"
             id="header_backing">
                 <div class="flex flex-row  items-center h-14 w-full  px-4 py-3 pl-4 lg:pl-32 lg:pr-12">
-            <Link class="mr-48" to='/home' >
+            <Link class="md:mr-48 mr-32" to='/home' >
                 <p class="text-white text-2xl font-500 hover:text-gray-400">Tudor</p>
             </Link>
             <Link class="mr-6" to='/articles' >

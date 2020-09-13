@@ -23,7 +23,7 @@ const UserArticlePageView = ({loading,fail,article}) => {
     }
 
     return (
-        <div class="flex flex-row md:pt-32 min-h-screen">
+        <div class="flex flex-row md:pt-32 pt-12 min-h-screen">
             <div class="md:w-1/3"/>
             <div class="flex-column items-center mb-6 md:w-1/2 w-full text-gray-800 px-6 md:px-0">
                 <div class="md:w-3/4 w-full min-h-32 ">
