@@ -9,7 +9,7 @@ const UserArticlePageView = ({loading,fail,article}) => {
         articleText = article.body.map(item => 
         { 
             if (item.includes('*subheader*')) {
-                return <p class="break-words text-xl lg:text-2xl font-thin underline whitespace-prewrap pb-6 leading-relaxed pt-2">{item.replace('*subheader*','')}</p>
+                return <p class="break-words text-xl lg:text-2xl font-bold whitespace-prewrap pb-6 leading-relaxed pt-2">{item.replace('*subheader*','')}</p>
             } else if (item.includes('*link*')) {
                 const result = item.replace('*link*','')
                 return <a href={result} class="break-words font-mono whitespace-prewrap pb-2 underline">{result}</a>
@@ -17,55 +17,40 @@ const UserArticlePageView = ({loading,fail,article}) => {
                 const result = item.replace('*quote*','')
                 return <a href={result} class="break-words whitespace-prewrap pb-4 pt-2 px-4 italic">{result}</a>
             } else {
-                return <p class="break-words whitespace-prewrap pb-2">{item}</p>
+                return <p class="break-words text-gray-700 font-semibold whitespace-prewrap pb-2">{item}</p>
             }
         })
-        console.log(articleText)
     }
 
     return (
-        <div class="flex">
-            <div class="invisible lg:visible font-mono fixed w-1/10 pl-10 m-8 border-r-2 text-xs border-solid border-black text-right pr-4 mr-16 mt-64">
-                <div class="w-48">
-                <p class="w-full break-words whitespace-prewrap">title: {article.title}</p>
-                </div>
-                <div class="w-48">
-                <p class="w-full break-words whitespace-prewrap">subtitle: {article.subtitle}</p>
-                </div>
-                <div class="w-48">
-                <p class="w-full break-words whitespace-prewrap">date: {articleDate.toDateString()}</p>
-                </div>
-            </div>
-            <div class="lg:w-1/6"/>
-            <div class="flex-column items-center p-6 lg:p-16 mb-6 w-full lg:w-1/2">
-                <div class="w-full min-h-32">
+        <div class="flex flex-row pt-32 min-h-screen">
+            <div class="md:w-1/3"/>
+            <div class="flex-column items-center mb-6 md:w-1/2 text-gray-800 px-6 md:px-0">
+                <div class="md:w-3/4 min-h-32 ">
                     {loading ? 
-                    <div class="h-32">
-                    <PacmanLoader 
-                        size={50}
-                        loading={loading} /> 
-                    </div>
+                        <div class="h-32">
+                            <PacmanLoader 
+                                size={50}
+                                loading={loading} /> 
+                        </div>
                         :
-                    <div>
-                        <p class="text-4xl lg:text-6xl font-thin font-serif break-words">{article.title}</p>
-                        <p class="text:md lg:text-lg italic break-words whitespace-prewrap">{article.subtitle}</p>
-                    </div>
+                        <div>
+                            <p class="text-4xl lg:text-6xl font-bold break-words pb-4">{article.title}</p>
+                            <p class="text-lg break-words font-bold whitespace-prewrap pb-6">By Tudor Evans on {articleDate.toDateString()}</p>
+                            <p class="text:md lg:text-lg text-gray-700 pb-6 break-words font-semibold whitespace-prewrap">{article.subtitle}</p>
+                        </div>
                     }
                 </div>
-                <div class="border-solid border-black border-2 mt-4 mb-8 lg:mb-8" />
                 {loading ?
-                    <PacmanLoader 
-                    size={50}
-                    loading={loading} /> 
+                    null
                     : 
                     <div>
                     { articleText ?
                         <>
-                            <div class="w-full lg:wrap bg-white text-lg lg:text-xl font-serif font-hairline mb-2">{articleText}</div>
-                            <p class="lg:invisible text-lg italic break-words whitespace-prewrap">{articleDate.toDateString()}</p>
+                            <div class="md:w-3/4 lg:wrap bg-white text-lg lg:text-xl mb-2">{articleText}</div>
                         </>
-                        :
-                        fail }
+                        : fail 
+                    }
                     </div>
                 }
             </div>

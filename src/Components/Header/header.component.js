@@ -12,7 +12,7 @@ const HeaderComponent = (props) => {
     }
 
     return(
-        <HeaderView handleLogout={handleLogout} />
+        <HeaderView handleLogout={handleLogout} {...props} />
     )
 }
 

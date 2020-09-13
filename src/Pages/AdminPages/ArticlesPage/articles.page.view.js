@@ -6,8 +6,8 @@ const ArticlesPageView = ({articles,setArticles}) => {
 
     return (
         <div class="flex items-center w-full">
-            <div class="lg:w-1/6"/>
-            <div class="w-full lg:w-1/2 flex-column p-6 lg:p-16">
+            <div class=""/>
+            <div class=" flex-column p-6 lg:p-16">
                 <div class="flex flex-row content-between">
                     <p class="text-4xl lg:text-6xl font-thin">Edit articles</p>
                     <div class="ml-4">

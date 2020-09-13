@@ -23,12 +23,15 @@ const ArticleCard = ({article,articles,setArticles,type}) => {
             state: {
                 articleId:articleId
             }
-         }}>
-            <div class="flex w-full text-black justify-between border-solid border-t-2 border-b-2 border-grey bg-white py-2 px-4 mt-6 mb-6 hover:shadow-xl">
-                <div class="flex-row w-10/12">
-                    <p class="text-xl lg:text-3xl truncate">{article.title}</p>
-                    <p class="text-xs truncate">{article.subtitle}</p>
-                    <p class="text-s font-semibold">{articleDate.toDateString()}</p>
+         }} class="w-full">
+            <div class="md:w-3/4 text-gray-700 justify-between border-solid border-b-2 border-gray-700 bg-white py-2 pb-16 mb-12">
+                <div class="flex flex-col">
+                    <p class="text-xl lg:text-5xl truncate font-bold leading-loose hover:text-gray-900 pb-4">{article.title}</p>
+                    <div class="flex flex-row items-center">
+                        <div class="rounded-full px-4 py-2 text-white" id="header_backing" >
+                            <p class="text-s font-semibold" >{articleDate.toDateString()}</p>
+                        </div>
+                    </div>
                 </div>
                 { type === 'admin' ? <div class=""><DeleteButton handleDelete={handleDelete} /></div> : null }
             </div>
