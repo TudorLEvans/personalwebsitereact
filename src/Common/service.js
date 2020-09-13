@@ -7,8 +7,7 @@ export function request( path, reqBody) {
         body: JSON.stringify({params:reqBody})
     };
     const address = 'tudorevans.uk';
-    const port = 80;
-    return fetch(`http://${address}:${port}/${path}`, requestOptions)
+    return fetch(`https://${address}/${path}`, requestOptions)
         .then(response => {
             return response.text().then(text => {
             if (!response.ok) {
