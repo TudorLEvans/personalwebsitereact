@@ -16,35 +16,28 @@ const HeaderView = (props) => {
             <Link class="md:mr-48 mr-32" to='/home' >
                 <p class="text-white text-2xl font-500 hover:text-gray-400">Tudor</p>
             </Link>
-            <Link class="mr-6" to='/articles' >
-                <p class="text-white text-2xl font-500 hover:text-gray-400">Blog</p>
-            </Link>
             <AuthContext.Consumer>
                 {(context) => {
                     return context.state.token === null 
                     ?              
                     ( <>
+                          
+                    <Link class="mr-6" to='/articles' >
+                        <p class="text-white text-2xl font-500 hover:text-gray-400">Blog</p>
+                    </Link>
                     <Link to='/login' >
                         <p class="text-white text-2xl font-500 hover:text-gray-400">Login</p>
                     </Link>
                     </> )
                     :   ( <>
+                            
+                    <Link class="mr-6" to='/admin/articles' >
+                        <p class="text-white text-2xl font-500 hover:text-gray-400">Blog</p>
+                    </Link>
                     <Link onClick={props.handleLogout} to='/home' >
-                        <p class="text-white text-2xl font-500 hover:text-gray-400">Tudor</p>
+                        <p class="text-white text-2xl font-500 hover:text-gray-400">Logout</p>
                     </Link>
                     </> )
-                }}
-            </AuthContext.Consumer>
-            <AuthContext.Consumer>
-                {(context) => {
-                    if  (context.state.role === 'admin') {
-                        return context.state.role === 'admin'
-                        ? (                 
-                        <Link onClick={props.handleLogout} to='/home' >
-                            <p class="text-white lg:text-6xl hover:text-gray-400">Tudor</p>
-                        </Link>
-                        ) : null
-                    }
                 }}
             </AuthContext.Consumer>
             </div>

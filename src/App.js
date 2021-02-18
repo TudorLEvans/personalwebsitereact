@@ -80,10 +80,10 @@ function App() {
       const userToken = JSON.parse(localStorage.getItem('session'));
       userToken 
         ? contextFunctions.restore(userToken)
-        : localStorage.removeItem('session');
+        : console.log(null)
     };
     getSession();
-  }, [animation, contextFunctions]);
+  }, [contextFunctions]);
 
 
   return (

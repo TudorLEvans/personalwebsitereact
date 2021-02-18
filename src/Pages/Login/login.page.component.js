@@ -13,8 +13,9 @@ const LoginPage = (props) => {
     const handleFormSubmit = async () => {
         try {
             setLoading(true)
+            console.log(login.userName)
             const user = await request('login',[login.userName,login.password])
-            console.log(user)
+            console.log('here is the user',user)
             if (user.status === 200) {
                 localStorage.setItem('session',JSON.stringify(user.output))
                 contextFunctions.signIn(user.output)
